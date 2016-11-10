@@ -1,2 +1,17 @@
-<h1>Hola</h1>
-<p>El numero es: <%= @numero %></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Curriculum</title>
+</head>
+<body>
+<h1> Info </h1>
+
+
+<ul><% @ @portafolio [:info].each do |key, value| %> 
+<p><%= key %>: <%= value %></p>
+<% end %>
+
+
+</body>
+</html>
