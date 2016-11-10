@@ -1,4 +1,4 @@
-class PortfolioControllers < ApplicationControllers
+class PortfolioController < ApplicationController
 
 	def primera
 		@numero = rand(100..10001)
