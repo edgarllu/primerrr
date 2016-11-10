@@ -7,31 +7,11 @@
 <body>
 <h1> Info </h1>
 
-<ul>
-	<li><%= @name %> </li>
-	<li><%= @adress %> </li>
-	<li><%= @age %> </li>
-</ul>
 
-<h1> Studies </h1>
+<ul><% @ @portafolio [:info].each do |key, value| %> 
+<p><%= key %>: <%= value %></p>
+<% end %>
 
-<ul>
-	<li><%= @university %> </li>
-	<li><%= @grade_univ %> </li>
-	<li><%= @master %> </li>
-	<li><%= @grade_master %> </li>
-</ul>
-
-<h1> Work </h1>
-
-<ul>
-	<li><%= @first %> </li>
-	<li><%= @title %> </li>
-	<li><%= @company %> </li>
-	<li><%= @gsecond %> </li>
-	<li><%= @title %> </li>
-	<li><%= @company %> </li>
-</ul>
 
 </body>
 </html>
